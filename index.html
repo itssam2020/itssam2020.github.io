@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
     <title>IT Teacher</title>
+    <script type="text/javascript">
+        const content = "Hi. I'm Somi, \n front-end developer.";
+        const text = document.querySelector(".text");
+        let i = 0;
+
+        function typing(){
+            let txt = content[i++];
+            text.innerHTML += txt=== "\n" ? "<br/>": txt;
+            if (i > content.length) {
+                text.textContent = "";
+                i = 0;
+            }
+        }
+        setInterval(typing, 200)
+    </script>
     <style>
         body{
             margin: 0;
