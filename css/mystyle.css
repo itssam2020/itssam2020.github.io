@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        
+a{ color: white; }
+a:visted{ color: white; }
+a:link{ color: white; text-decoration: none;}
+a:hover{ color: lightgray;}
+        
+nav{
+    background-color: black;
+    height : 55px;
+    line-height: 55px;
+}
+
+section{
+        height : 700px;
+}
+
+.wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+}
+
+.text{
+    font-size: 2rem;
+    color: gold;
+    font-weight: bold;
+    display: inline; vertical-align: middle;
+    border-right: .05em solid black;
+    animation:  cursor 0.2s ease infinite;
+
+    margin-bottom: 10px;
+}
+
+.sm-text{
+    font-size: 1.5rem;
+}
+
+footer {
+        background-color: white;
+        height : 55px;
+        line-height : 55px;
+}
